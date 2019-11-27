@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        /**
+         * 修改库存
+         */
+        function changeNum(val) {
+            document.getElementById("title").innerHTML = val
+        }
+
+        /**
+         * 立即购买
+         */
+        function buyNow(id) {
+            android.buyNow(id)
+        }
+    </script>
+</head>
+
+<body>
+    <h1>商品标题：</h1>
+    <p style="color: rgb(255, 0, 255);">青春时尚 潮流男鞋 韩版舒适简约百搭板鞋男士休闲鞋</p>
+
+    <p>商品货号：199</p>
+    <p>库存情况：<span id="title" style="color: rgb(0, 255, 76);">10</span></p>
+    <p>上架时间：2019-11-29</p>
+
+    <button onclick="buyNow(100)" style="color: red;">立即购买</button>
+</body>
+
+</html>
